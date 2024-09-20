@@ -1,0 +1,18 @@
+{
+  "name": "image-crop",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.12.0",
+    "@parcel/transformer-webmanifest": "^2.12.0",
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "cropperjs": "^1.6.2",
+    "redom": "^4.1.5"
+  }
+}

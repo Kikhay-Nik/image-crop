@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../node_modules/cropperjs/dist/cropper.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="image/icons/apple-touch-icon.png" />
+    <link rel="icon" href="image/icons/favicon.ico" sizes="any" />
+    <link rel="icon" href="image/icons/icon.png" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <script type="module" src="main.js"></script>
+    <title>Cropping</title>
+  </head>
+  <body>
+    <div id="app">
+      <p>You can crop image and download after</p>
+      <div class="buttons-group">
+        <input
+          type="file"
+          id="image-upload"
+          style="display: none"
+          accept="image/*"
+        />
+        <div class="cropped-container" style="display: none">
+          <img src="#" alt="" id="image-cropped" />
+        </div>
+        <button id="upload-button">Upload image</button>
+        <button id="crop-button">Crop image</button>
+        <button id="download-button">Download new image</button>
+      </div>
+      <div class="image-wrapper">
+        <img id="displayed-image" src="#" alt="" class="displayed-image"/>
+      </div>
+    </div>
+  </body>
+</html>
